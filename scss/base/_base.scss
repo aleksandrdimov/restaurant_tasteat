@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-white;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.wrapper {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+}

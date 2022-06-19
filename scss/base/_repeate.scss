@@ -1,0 +1,70 @@
+.content {
+    &__title {
+        font-family: $m-font-jose, sans-serif;
+        font-size: 15px;
+        line-height: 22.5px;
+        letter-spacing: 3px;
+        color: $color-shark;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        display: inline-block;
+        padding-top: 3px;
+        border-bottom: 1px solid $color-equator;
+        border-top: 1px solid $color-equator;
+
+        &_blog {
+            margin-right: 30px;
+        }
+
+        &_white {
+            color: $color-white;
+        }
+    }
+
+    &__subtitle {
+        font-family: $m-font-cor-reg, sans-serif;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: $color-shark;
+        margin-bottom: 13px;
+
+        &_blog {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 700;
+        }
+
+        &_white {
+            color: $color-white;
+        }
+    }
+
+    &__text {
+        font-family: $m-font-jose, sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        color: $color-emperor;
+
+        &_white {
+            color: $color-white;
+        }
+
+        &_equator {
+            color: $color-equator;
+        }
+    }
+}
+
+.svg {
+    &__logo {
+        &:hover path {
+            fill: $color-white;
+        }
+    }
+
+    &:hover path {
+        fill: $color-equator;
+    }
+}

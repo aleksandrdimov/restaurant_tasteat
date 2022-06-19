@@ -1,0 +1,203 @@
+.header {
+    background: $color-shark;
+
+    &__border {
+        border-bottom: 1px solid $color-shuttle-gray;
+    }
+
+    &__logo {
+        padding: 50px 10px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        flex-wrap: wrap;
+    }
+
+    &__nav {
+        padding: 20px 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        text-transform: capitalize;
+        font-family: $m-font-jose, sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+
+        &:not(:last-of-type) {
+            margin-right: 60px;
+        }
+    }
+
+    &__link {
+        color: $color-white;
+
+        &:hover {
+            color: $color-equator;
+        }
+    }
+}
+
+.social-networks {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        &a {
+            width: 24px;
+            height: 24px;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 999px) {
+    .burger {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+
+        & span {
+            transition: all .6s ease 0s;
+            position: absolute;
+            background-color: white;
+            width: 25px;
+            height: 4px;
+            right: 0;
+            top: 8px;
+            top: 50%;
+            transform: scale(1) translate(0px, -50%);
+            z-index: 5;
+        }
+
+        &.js-active span {
+            transform: scale(0) translate(0px, -50%);
+        }
+
+        &::before {
+            transition: all .6s ease 0s;
+            content: '';
+            position: absolute;
+            height: 4px;
+            background-color: white;
+            z-index: 5;
+            right: 0;
+            top: 0;
+            width: 35px;
+        }
+
+        &.js-active::before {
+            transition: all .6s ease 0s;
+            transform: rotate(45deg);
+            top: 14px;
+            z-index: 2;
+        }
+
+        &::after {
+            transition: all .6s ease 0s;
+            content: '';
+            position: absolute;
+            height: 4px;
+            background-color: white;
+            z-index: 5;
+            right: 0;
+            bottom: 0;
+            width: 20px;
+        }
+
+        &.js-active::after {
+            z-index: 2;
+            transition: all .6s ease 0s;
+            transform: rotate(-45deg);
+            width: 35px;
+            bottom: 12px;
+        }
+
+    }
+
+    .header {
+        &__wrapper {
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            top: 0;
+            width: 350px;
+            background: $color-shark;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: -1px 1px 5px $color-equator;
+            transform: translateY(-120%);
+            transition: transform .6s ease-out;
+
+            &.js-active {
+                transform: translateY(0%);
+                overflow: hidden;
+            }
+        }
+
+        &__border {
+            border: none;
+            padding-top: 70px;
+        }
+
+        &__container {
+            display: block;
+            padding: 0;
+        }
+
+        &__nav {
+            padding: 0;
+        }
+
+        &__list {
+            display: block;
+            text-align: center;
+        }
+
+        &__item {
+            &:not(:last-of-type) {
+                margin: 20px 0;
+            }
+        }
+
+        &__logo {
+            display: none;
+        }
+
+        &__box {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-right: 15px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+    }
+
+    .social-networks {
+        justify-content: center;
+        padding: 30px 0;
+
+        &__item {
+            &:not(:last-of-type) {
+                margin-right: 30px;
+            }
+        }
+    }
+}

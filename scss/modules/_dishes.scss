@@ -1,0 +1,115 @@
+.dishes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 120px;
+
+    &__text {
+        max-width: 760px;
+        margin-bottom: 40px;
+        display: inline-block;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        text-align: start;
+        margin: 0 -16px;
+        flex-wrap: wrap;
+
+        &_mb {
+            margin-bottom: 110px;
+        }
+    }
+
+    &__margin {
+        margin: 0 15px;
+        max-width: 665px;
+        width: 100%;
+
+    }
+
+
+    &__content {
+        margin-bottom: 10px;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            order: 1;
+        }
+
+        &-picture {
+            order: 2;
+        }
+
+        &_left {
+            background: url(../../assets/images/dishes_left.png) no-repeat center;
+            background-size: cover;
+        }
+
+        &_right {
+            background: url(../../assets/images/dishes_right.png) no-repeat center;
+            background-size: cover;
+        }
+
+        &-stock {
+            border-bottom: 1px solid $color-shark;
+            border-top: 1px solid $color-shark;
+            letter-spacing: 4.5px;
+        }
+
+        &-price {
+            margin: 25px 0 35px -15px;
+            max-width: 150px;
+        }
+
+    }
+
+    &__item {
+        width: 333px;
+        padding: 0 15px 30px 15px;
+        margin-bottom: 40px;
+
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $color-alto;
+            font-family: $m-font-cor-bold, sans-serif;
+            font-size: 30px;
+            line-height: 42px;
+            color: $color-shark;
+            text-transform: capitalize;
+            margin-bottom: 14px;
+        }
+    }
+}
+
+@media (max-width:599px) {
+    .dishes {
+        &__content {
+            padding: 40px 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-item {
+                order: 2;
+            }
+
+            &-picture {
+                order: 1;
+            }
+
+            &-stock {
+                display: block;
+                max-width: 210px;
+            }
+
+        }
+    }
+}
