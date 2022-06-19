@@ -1,8 +1,6 @@
 .reserv {
     display: flex;
     justify-content: center;
-    background: url(../../assets/images/reservation_bg.png) no-repeat center;
-    background-size: cover;
 
     &__container {
         background: $color-shark;

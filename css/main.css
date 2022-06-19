@@ -874,16 +874,6 @@ img {
           order: 2;
 }
 
-.dishes__content_left {
-  background: url(../../assets/images/dishes_left.png) no-repeat center;
-  background-size: cover;
-}
-
-.dishes__content_right {
-  background: url(../../assets/images/dishes_right.png) no-repeat center;
-  background-size: cover;
-}
-
 .dishes__content-stock {
   border-bottom: 1px solid #292E36;
   border-top: 1px solid #292E36;
@@ -1121,8 +1111,6 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(../../assets/images/reservation_bg.png) no-repeat center;
-  background-size: cover;
 }
 
 .reserv__container {
